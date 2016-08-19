@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" id="app">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="referrer" content="no-referrer">
+    <title>豆瓣在线音乐</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="music">
+			<div class="header"></div>
+			<div class="content">
+				<div class="lyout">
+					<div class="lyout-photo">
+						<div class="photodiv">
+							<img v-bind:src="musicData.photo" alt="">
+						</div>
+					</div>
+					<div class="lyout-title">
+						<p class="music-title">
+							<span class="text-hidden" >{{musicData.title}}</span>
+						</p>
+						<p class="music-name">
+							<span class="text-hidden" >{{musicData.name}}</span>
+						</p>
+					</div>
+				</div>
+				<audio v-bind:src="musicData.url" controls="controls" >您的浏览器不支持~</audio>
+				<div class="btndiv">
+					<a href="javascript:" v-on:click="Next()" style="padding-left: 5px;" >
+						<span class="glyphicon glyphicon-forward"></span>
+					</a>
+					<a href="javascript:" v-on:click="ChannerList()" >
+						<span class="glyphicon glyphicon-align-justify"></span>
+					</a>
+					<a href="javascript:" v-on:click="MusicText(musicData.ssid,musicData.sid)" >
+						<span class="glyphicon glyphicon-text-width"></span>
+					</a>
+				</div>
+				<div class="MusicText">
+		        	<p v-for="list in musicText.lyric">{{list}}</p>
+		        </div>
+			</div>
+			  <div class="Channerls">
+	        	<p class="chan-tit">频道列表</p>
+	        	<ul>
+	        		<li v-for="item in channels">
+	        			<a href="javascript:;">{{item.name}}</a>
+	        		</li>
+	        	</ul>
+	        </div>
+        </div>
+    </div>
+</body>
+<script src="js/vue.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+</html>

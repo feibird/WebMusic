@@ -1,0 +1,23 @@
+.music{width: 250px;height:auto;margin: 10px auto;border-top-left-radius: 5px;border-bottom-left-radius: 5px;box-shadow: 0px 0px 5px black;position: relative;}
+.music .header{height: 80px;background:url(../image/header.jpg)no-repeat;background-size:cover;border-top-left-radius: 5px;}
+.music .content{height: auto;background:#cacccd;}
+.music .content .lyout{display: table;width: 100%;height: 60px;padding-top: 20px;margin-bottom:20px;}
+.music .content .lyout .lyout-photo{display: table-cell;width:90px;padding-left:10px;padding-right: 10px;height: 60px;overflow: hidden;vertical-align: middle;}
+.music .content .lyout .lyout-photo .photodiv{height: 60px;overflow: hidden;width: 100%}
+.music .content .lyout .lyout-photo .photodiv img{width: 100%;}
+.music .content .lyout .lyout-title{display: table-cell;vertical-align: middle;}
+.text-hidden{display: inline-block;width: 99%;white-space: nowrap;word-break: keep-all;overflow: hidden;text-overflow: ellipsis;font-size: 14px;vertical-align: middle;}
+.music .content .lyout .lyout-title p{margin-bottom: 0px;}
+.music .content .lyout .lyout-title .music-title{}
+.music .content .lyout .lyout-title .music-name{font-size: 12px;}
+.music audio{width: 100%;background-color: black;}
+.btndiv{height:40px;line-height: 40px;margin-top: -5px;text-align: center;}
+.btndiv a{background:  black;width: 30px;height: 30px;display: inline-block;vertical-align: middle;line-height: 30px;text-align: center;border-radius: 50%;box-shadow: 0px 0px 10px black;}
+.btndiv a span{color: white;}
+.Channerls{width: 200px;background: black;height: 300px;overflow: auto;position: absolute;top: 0;right:-201px;}
+.Channerls .chan-tit{background:#cacccd;padding: 10px 0;text-align: center;}
+.Channerls ul {padding: 0;margin-top: -10px;}
+.Channerls ul li{list-style-type: none;margin: 5px 0;padding-left: 20px;padding: 10px 20px;}
+.Channerls ul li a{color: white;width: 100%;display: inline-block;}
+.Channerls ul li:hover{background: red;}
+a:hover{text-decoration: none;}
